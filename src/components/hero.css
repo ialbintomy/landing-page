@@ -27,7 +27,7 @@
   }
 
   .hero p {
-    font-size: 20px;
+    font-size: 12px;
     margin: 20px 0;
     position: relative;
     animation: fadeInUp 2s ease;
@@ -40,6 +40,7 @@
     text-decoration: none;
     border-radius: 30px;
     font-weight: 600;
+    font-size: 12px;
     transition: 0.3s ease, transform 0.3s ease;
     position: relative;
     animation: fadeIn 2s ease;
