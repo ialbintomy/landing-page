@@ -1,0 +1,76 @@
+.destinations {
+    padding: 80px 0;
+    text-align: center;
+    background: #fff;
+  }
+
+  .destinations h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease;
+  }
+
+  .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  .destination-item {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+  }
+
+  .destination-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .destination-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .destination-item h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #2c3e50;
+  }
+
+  .destination-item p {
+    font-size: 16px;
+    color: #666;
+    padding: 0 20px 20px;
+  }
+  .view{
+    padding: 1rem;
+  }
+  .destinations a{
+    text-decoration: none;
+    color: rgb(8, 87, 87);
+    font-family: 'poppins';
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .destinations  a:hover{
+    font-weight: 900;
+    color: rgb(29, 0, 56);
+    transition: 0.3s;
+  }
+  @keyframes appear {
+    from{
+         opacity: 0;
+         scale: 0;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}

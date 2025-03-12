@@ -1,0 +1,75 @@
+.services {
+    background: #f4f4f4;
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  .services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease;
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  .service-item {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+  }
+  .service-item:nth-child(1){
+    background: url('../assets/images/tour.jpg');
+    background-size: cover;
+  }
+  .service-item:nth-child(2){
+    background: url('../assets/images/trekking.jpg');
+    background-size: cover;
+  }
+  .service-item:nth-child(3){
+    background: url('../assets/images/culture.jpg');
+    background-size: cover;
+  }
+  .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .service-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: aliceblue;
+  }
+
+  .service-item p {
+    font-size: 16px;
+    color: white;
+  }
+  .arrow{
+    padding: 1rem;
+  }
+  .arrow a{
+    font-size: 2rem;
+    color:rgb(199, 0, 0) ;
+  }
+  .arrow a:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;
+  }
+  @keyframes appear {
+    from{
+         opacity: 0;
+         scale: 0;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
